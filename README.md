@@ -1,2 +1,2 @@
 # python_learner
-Python scripts and Beecrowd solutions i get
+Python scripts and Beecrowd problems I solve
