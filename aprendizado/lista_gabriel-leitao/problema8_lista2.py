@@ -5,17 +5,17 @@ def input_list():
       numbers.append(line)
    return numbers
 
-def situacaoFinal(situacaoAluno, nomeDoAluno, mediaAluno):
-   print("O(A) aluno(a) %s esta com situacao %s devido a media final de %.1f"
-          % (nomeDoAluno, situacaoAluno, mediaAluno))
+def situacaoFinal(nomeDoAluno, mediaAluno,situacaoAluno):
+   print("O(A) aluno(a) %s esta com situacao %s devido a media final de" % (nomeDoAluno, situacaoAluno), round(mediaAluno, 1))
 
 
-def situacaoDoAluno(nomeDoAluno : str, notas: list):
-   mediaAluno = sum(notas) / len(notas)
-   if(mediaAluno >= 6): situacaoAluno = "aprovado"
-   elif (5 < mediaAluno < 6): situacaoAluno = "aprovado por recuperacao"
-   else: situacaoAluno = "reprovado"
-   situacaoFinal(situacaoAluno, nomeDoAluno, mediaAluno)
+def situacaoDoAluno(nomeDoAluno, n1 : float, n2 : float, n3 : float):
+	notas = [n1, n2, n3]
+	mediaAluno = sum(notas) / len(notas)
+	if( 6 <= mediaAluno <= 10): situacaoAluno = "Aprovado"
+	elif (5 <= mediaAluno < 6): situacaoAluno = "Aprovado por recuperacao"
+	elif (mediaAluno < 5): situacaoAluno = "Reprovado"
+	situacaoFinal(nomeDoAluno, mediaAluno, situacaoAluno)
 
 
 
@@ -27,5 +27,5 @@ class Aluno:
 
 if __name__ == "__main__":
    aluno = Aluno()
-   situacaoDoAluno(aluno.nomeAluno, aluno.notas)
+   situacaoDoAluno(aluno.nomeAluno, aluno.notas[0], aluno.notas[1], aluno.notas[2])
    
