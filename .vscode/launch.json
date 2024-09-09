@@ -5,6 +5,20 @@
    "version": "0.2.0",
    "configurations": [
       {
+         "type": "java",
+         "name": "LeetCode4",
+         "request": "launch",
+         "mainClass": "leetcode4.LeetCode4",
+         "projectName": "pypy_f9effdbf"
+      },
+      {
+         "type": "java",
+         "name": "Leetcode3",
+         "request": "launch",
+         "mainClass": "Leetcode3",
+         "projectName": "pypy_f9effdbf"
+      },
+      {
          "name": "Depurador do Python: Arquivo Atual",
          "type": "debugpy",
          "request": "launch",

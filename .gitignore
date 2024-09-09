@@ -139,7 +139,8 @@ venv.bak/
 
 # mkdocs documentation
 /site
-
+# java
+*.class
 # mypy
 .mypy_cache/
 .dmypy.json
